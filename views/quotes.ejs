@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quotes</title>
+</head>
+<body>
+    <div id='wrapper'>
+        <div id='main'>
+            <h3>Here are the awesome quotes!</h3>
+            
+            <% for (var quote of quotes){ %>
+                <div class="quote">
+                    <% console.log(quote) %>
+                    <p>"<%= quote.quote %>"</p>
+                    <p class="creator"><%= quote.name %> at <%= quote.createdAt %></p>
+                </div>
+            <% } %>
+                    
+            <a href="/"><button>Go Back</button></a>
+        </div>
+    
+</body>
+</html>
